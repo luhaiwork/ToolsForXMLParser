@@ -35,6 +35,7 @@ public class MainActivity extends ActionBarActivity {
             list = parse(getMyXML());
             for (City city : list) {
                 Log.e("tag", city.getName());
+                Log.e("tag",city.getDesc());
             }
         } catch (XmlPullParserException e) {
             e.printStackTrace();
@@ -118,6 +119,9 @@ public class MainActivity extends ActionBarActivity {
             if (parserName.equals("name")) {
                 parser.next();
                 city.setName(parser.getText());
+            }else if(parserName.equals("desc")){
+                parser.next();
+                city.setDesc(parser.getText());
             } else {
                 skip(parser);
             }
