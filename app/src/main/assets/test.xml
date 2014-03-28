@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cities>
+    <city>
+        <name>aaa</name>
+        <desc>desc...</desc>
+    </city>
+    <city>
+        <name>bbb</name>
+        <desc>bbbbdesc...</desc>
+    </city>
+</cities>
